@@ -9,7 +9,7 @@ interface I18nContext {
 
 export interface I18nProviderProps extends I18nContext {}
 
-const LinguiContext = React.createContext<I18nContext>(null)
+export const LinguiContext = React.createContext<I18nContext>(null)
 
 export function useLingui(): I18nContext {
   const context = React.useContext(LinguiContext)
